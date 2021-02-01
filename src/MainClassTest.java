@@ -3,11 +3,11 @@ import org.junit.Test;
 public class MainClassTest extends MainClass
 {
     @Test
-    public void testGetLocalNumber()
+    public void testGetClassNumber()
     {
-        int a = this.getLocalNumber();
-        if (a==14)
-        {
+        int a = this.getClassNumber();
+
+        if(a>45){
             System.out.println("Pass");
         }else{
             System.out.println("Fail");
