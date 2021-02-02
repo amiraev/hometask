@@ -2,12 +2,11 @@ import org.junit.Test;
 
 public class MainClassTest extends MainClass
 {
+    String a = this.getClassString();
     @Test
-    public void testGetClassNumber()
+    public void testGetClassString()
     {
-        int a = this.getClassNumber();
-
-        if(a>45){
+        if(a.contains("Hello")){
             System.out.println("Pass");
         }else{
             System.out.println("Fail");
