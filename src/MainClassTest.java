@@ -1,3 +1,4 @@
+import org.junit.Assert;
 import org.junit.Test;
 
 public class MainClassTest extends MainClass
@@ -6,10 +7,13 @@ public class MainClassTest extends MainClass
     @Test
     public void testGetClassString()
     {
-        if(a.contains("Hello")){
-            System.out.println("Pass");
-        }else{
-            System.out.println("Fail");
-        }
+       if (a.contains("hello")){
+           System.out.println("Pass");
+       }else if(a.contains("Hello")){
+           System.out.println("Pass");
+       }else{
+           System.out.println("Fail");
+       }
     }
+
 }
